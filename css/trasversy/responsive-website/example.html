@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f4f4f4;
+        }
+        .container{
+            max-width: 1100px;
+            margin: auto;
+            background-color: #fff;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+        .grid div:nth-child(odd){
+            grid-row: 1/span 2;
+        }
+        .flex{
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        .flex p:first-child{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid">
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis eveniet reprehenderit aspernatur accusantium quae tempora, laboriosam odio deleniti earum possimus facilis distinctio optio? Nihil, ullam obcaecati quos consequatur ipsa accusamus.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, voluptas. Eveniet sapiente dolores hic quia dolor soluta distinctio, ipsa beatae, vero nulla id temporibus laborum, pariatur reprehenderit facere blanditiis voluptatibus.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur iste quae quisquam, officiis sapiente itaque accusamus dolores odio? Iste, praesentium delectus ex laborum similique harum impedit nostrum at id minima blanditiis eius alias quam ipsum deserunt error dicta voluptatum nam.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, laudantium!</p>
+            </div>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat dolore in reprehenderit dicta nihil possimus.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae maxime, esse rem molestias distinctio nulla quisquam eveniet! Voluptas, voluptate sunt.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="flex">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nam, sint repudiandae voluptate nesciunt necessitatibus corporis veritatis sed iure! Quae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quas, ipsam delectus similique saepe quis ut voluptate rerum eius officiis. Fuga consequuntur ipsum sapiente voluptates.</p>
+        </div>
+    </div>
+</body>
+</html>

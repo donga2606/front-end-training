@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        @media(min-width: 768px){
+            .container-1{
+            display: flex;
+            margin-bottom: 20px;
+            /* align-items: flex-start; */
+            /* align-items: center; */
+            
+            }
+            .container-2{
+                display: flex;
+                justify-content: space-between;
+            }    
+        }
+        .container-3{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+           
+        .container-1 div, .container-2 div, .container-3 div{
+            border: 1px #ccc solid;
+            padding: 10px;
+        }
+        .box-1{
+            flex:2;
+            order:3;
+        }
+        .box-2{
+            flex:1;
+            order: 1;
+        }
+        .box-3{
+            flex: 1;
+            order: 2;
+        }
+      /
+        .container-3-box{
+            flex-basis: 15%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <div class="box-1">
+            <h3>Box one</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, animi aspernatur! Eligendi quidem minus voluptatum reiciendis unde libero maiores nihil ipsam, natus ipsum quas beatae, repellendus in. Eos, labore reprehenderit.</p>
+        </div>
+        <div class="box-2">
+            <h3>Box two</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, animi aspernatur! Eligendi quidem minus voluptatum reiciendis unde libero maiores nihil ipsam, natus ipsum quas beatae, repellendus in. Eos, labore reprehenderit.</p>
+        </div>
+        <div class="box-3">
+            <h3>Box three</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, animi aspernatur! Eligendi quidem minus voluptatum reiciendis unde libero maiores nihil ipsam, natus ipsum quas beatae, repellendus in. Eos, labore reprehenderit.</p>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="container-2-box">
+            <h3>Box one</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, animi aspernatur! Eligendi quidem minus voluptatum reiciendis unde libero maiores nihil ipsam, natus ipsum quas beatae, repellendus in. Eos, labore reprehenderit.</p>
+        </div>
+        <div class="container-2-box">
+            <h3>Box two</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, animi aspernatur! Eligendi quidem minus voluptatum reiciendis unde libero maiores nihil ipsam, natus ipsum quas beatae, repellendus in. Eos, labore reprehenderit.</p>
+        </div>
+        <div class="container-2-box">
+            <h3>Box three</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, animi aspernatur! Eligendi quidem minus voluptatum reiciendis unde libero maiores nihil ipsam, natus ipsum quas beatae, repellendus in. Eos, labore reprehenderit.</p>
+        </div>
+    </div>
+    <div class="container-3">
+        <div class="container-3-box">
+            <h3>Box one</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, animi aspernatur! Eligendi quidem minus voluptatum reiciendis unde libero maiores nihil ipsam, natus ipsum quas beatae, repellendus in. Eos, labore reprehenderit.</p>
+        </div>
+        <div class="container-3-box">
+            <h3>Box two</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, animi aspernatur! Eligendi quidem minus voluptatum reiciendis unde libero maiores nihil ipsam, natus ipsum quas beatae, repellendus in. Eos, labore reprehenderit.</p>
+        </div>
+        <div class="container-3-box">
+            <h3>Box three</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, animi aspernatur! Eligendi quidem minus voluptatum reiciendis unde libero maiores nihil ipsam, natus ipsum quas beatae, repellendus in. Eos, labore reprehenderit.</p>
+        </div>
+        <div class="container-3-box">
+            <h3>Box one</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, animi aspernatur! Eligendi quidem minus voluptatum reiciendis unde libero maiores nihil ipsam, natus ipsum quas beatae, repellendus in. Eos, labore reprehenderit.</p>
+        </div>
+        <div class="container-3-box">
+            <h3>Box two</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, animi aspernatur! Eligendi quidem minus voluptatum reiciendis unde libero maiores nihil ipsam, natus ipsum quas beatae, repellendus in. Eos, labore reprehenderit.</p>
+        </div>
+        <div class="container-3-box">
+            <h3>Box three</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, animi aspernatur! Eligendi quidem minus voluptatum reiciendis unde libero maiores nihil ipsam, natus ipsum quas beatae, repellendus in. Eos, labore reprehenderit.</p>
+        </div>
+    </div>
+</body>
+</html>
